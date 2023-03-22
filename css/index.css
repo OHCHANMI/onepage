@@ -313,16 +313,6 @@ main h1{
   display: flex;
   margin-top: 30px;
   }
- /*  @keyframes float{
-    0%{
-      opacity: 0;
-      top: 100%;
-    }
-    100%{
-      opacity: 1;
-      top: 0;
-    }
-  } */
 
 #designer h2{
   position: absolute;
@@ -331,7 +321,8 @@ main h1{
   font-size: 40px;
 }
 
-input[name=tabmenu]{display: none;}
+
+/* input[name=tabmenu]{display: none;} */
 
 .tab{
   border: 1px solid red;
@@ -339,7 +330,7 @@ input[name=tabmenu]{display: none;}
   height: 500px;
   margin: auto;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .d1, .d2, .d3{
@@ -371,7 +362,8 @@ input[name=tabmenu]{display: none;}
 }
 .d-cap{
   text-align: right;
-  width: 400px;
+  width: 450px;
+  font-size: 18px;
   padding-right: 50px;
   position: absolute;
   top: 0;
@@ -383,20 +375,118 @@ input[name=tabmenu]{display: none;}
   margin: 30px 0;
 }
 
-input[id=tab1]:checked ~.d2 label[for=tab2],
-input[id=tab1]:checked ~.d3 label[for=tab3]{
-  background-color: lightslategray;
+
+
+input[id=tab1]:checked ~.d2 img,
+input[id=tab1]:checked ~.d3 img{filter: blur(0.5);
 }
-input[id=tab1]:checked ~.d1 .d-cap{
-  top: 0;
-}
+input[id=tab1]:checked ~ .d1 .d-cap{top: 0;}
+
+input[id=tab2]:checked ~ .d1 label[for=tab1]{left: -300px;}
+
 
 
 
 
 /* ////store__________________ */
+#store{
+/*   border: 1px solid #000; */
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+.store_in{
+/*   border: 1px solid red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+}
+#store h2{
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-
+.store_in input[type=text],
+.store_in input[type=submit]{
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.store_in input[type=text]{
+  width: 500px;
+  border-radius: 10px 0 0 10px;
+  margin-right: -5px;
+}
+.store_in input[type=submit]{
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 23px;
+  padding-left: none;
+  cursor: pointer;
+}
+.store_in input[value=search]:hover{
+  text-shadow: 10px 10px 100px #fff;
+}
 
 
 /* footer_____________________________ */
+footer{
+  width: 100%;
+  background-color: #1f1f1f;
+  color: lightgray;
+  font-weight: 100;
+}
+.footer_in{
+  width: 1200px;
+  margin: auto;
+}
+.f_top{
+  margin-top: 100px;
+}
+.f_top:after{
+  content: '';
+  background-color: rgba(255, 0, 0, 0.329);
+  width: 100px;
+  height: 100px;
+}
+
+.f_main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+.f_main h5{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.f_main .fm_middle{
+  text-align: center;
+  font-size: 30px;
+}
+.fm_middle .logo{margin-bottom: 20px;}
+.fm_middle .sns a{
+  margin: 0 5px;
+  transition: 0.5s;}
+.fm_middle .sns a:hover{
+  text-shadow: 0 0 10px #fff;
+}
+.f_main .fm_right{text-align: right;}
+.f_bottom{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.f_bottom a:not(:last-child){
+  border-right: 1px solid lightgray;
+}
