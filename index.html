@@ -63,70 +63,58 @@
       <article id="product">
         <h2>Product</h2>
         <div class="product_in">
-          <ul>
-            <li class="p1">
+          
+          <div class="l1">
+            <input type="radio" name="product" id="p1" checked>
+            <input type="radio" name="product" id="p2">
+            <div class="items1">
               <div class="item">
-                <div class="p-img1">
-                  <img src="image/product1.jpg" alt="ph5">
-                </div>
-                <div class="p-img1-2">
-                  <img src="image/product1-2.jpg" alt="ph5">
-                </div>
+                <img src="image/product1.jpg" alt="ph5" class="product1-1">
+                <img src="image/product1-2.jpg" alt="ph5" class="product1-2">
               </div>
-              <div class="detail">
-                <div class="title">
-                  <h5>PH 5</h5>
-                </div>
-                <div class="color">
-                  <input type="radio" name="color" id="color1" checked>
-                  <input type="radio" name="color" id="color2">
-                </div>
-                <div class="color-btn">
-                  <label for="color1"></label>
-                  <label for="color2"></label>
-                </div>
+              <h5>ph5</h5>
+              <div class="pbtn">
+                <label for="p1"></label>
+                <label for="p2"></label>
               </div>
-            </li>
-            <li class="p2">
-              <div class="p-img2">
-                <img src="image/product2.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="l2">
+            <input type="radio" name="product" id="p3">
+            <input type="radio" name="product" id="p4">
+            <div class="items2">
+              <div class="item">
+                <img src="image/product2.jpg" alt="AJ 테이블" class="product2-1">
+                <img src="image/product2-2.jpg" alt="AJ 테이블" class="product2-2">
               </div>
-              <div class="detail">
-                <div class="title">
-                  <h5>AJ 테이블</h5>
-                </div>
-                <div class="color">
-                  <input type="radio" name="color" id="color3">
-                  <input type="radio" name="color" id="color4">
-                </div>
-                <div class="color-btn">
-                  <label for="color3"></label>
-                  <label for="color4"></label>
-                </div>
+              <h5>AJ 테이블</h5>
+              <div class="pbtn">
+                <label for="p3"></label>
+                <label for="p4"></label>
               </div>
-            </li>
-            <li class="p3">
-              <div class="p-img3">
-                <img src="image/product3.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="l3">
+            <input type="radio" name="product" id="p5">
+            <input type="radio" name="product" id="p6">
+            <div class="items3">
+              <div class="item">
+                <img src="image/product3.jpg" alt="판텔라 미니" class="product3-1">
+                <img src="image/product3-2.jpg" alt="판텔라 미니" class="product3-2">
               </div>
-              <div class="detail">
-                <div class="title">
-                  <h5>판텔라 미니</h5> 
-                </div>
-                <div class="color">
-                  <input type="radio" name="color" id="color5">
-                  <input type="radio" name="color" id="color6">
-                </div>
-                <div class="color-btn">
-                  <label for="color5"></label>
-                  <label for="color6"></label>
-                </div>
+              <h5>판텔라 미니</h5>
+              <div class="pbtn">
+                <label for="p5"></label>
+                <label for="p6"></label>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
+          </div>
 
           <div class="pro-btn">
-            <a href="#none" class="btn">view more</a>
+            <a href="#none" class="p-btn-b">view more</a>
           </div>
         </div>
       </article>
@@ -200,7 +188,6 @@
       <article id="store">
         <div class="store_in">
           <h2>find retailer</h2>
-          <!-- <h4>지점을 찾으시나요?</h4> -->
             <input type="text" placeholder="지역 또는 지점을 입력하세요.">
             <input type="submit" value="search" > <!-- 아이콘폰트 넣기 -->
         </div>
@@ -254,6 +241,7 @@
         </div>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
