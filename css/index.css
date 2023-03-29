@@ -40,7 +40,7 @@ nav{
   position: relative;
   transition: 0.4s;
 }
-.gnb li a:hover{color: #000;}
+.gnb li a:hover{color: #fff3bc;}
 .gnb li a:before{
   content: '';
   position: absolute;
@@ -49,7 +49,7 @@ nav{
   transform: translateX(-50%);
   width: 0px;
   height: 3px;
-  background-color: #000;
+  background-color: #fff3bc;
   transition: 0.5s;
 }
 .gnb li a:hover:before{
@@ -63,7 +63,8 @@ nav{
 /*   margin: 0 5px; */
   transition: 0.5s;}
 .util_menu a:hover{
-  text-shadow: 0 0 10px #fff;
+  text-shadow: 0 0 10px #fff3bc;
+  color: #fff;
 }
 
 
@@ -128,6 +129,7 @@ main h1{
 
 
 #about .atitle h2{
+  color: #ffd89b;
   font-family: 'Noto Serif Display', serif;
   font-size: 180px;
   font-weight: 500;
@@ -164,7 +166,7 @@ main h1{
   font-family: 'BookkMyungjo-Bd';
   text-align: right;
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   right: 0;
   margin-right: 20px;
 }
@@ -173,9 +175,10 @@ main h1{
   margin-bottom: 40px;
 }
 .caption p{
-  font-size: 23px;
-  font-weight: 100;
-  line-height: 30px;
+  color: #ffd89b;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 33px;
 }
 
 /* ////product________________ */
@@ -195,7 +198,8 @@ input[name=product]{display: none;}
 }
 
 #product h2{
-  font-size: 40px;
+  color: #C79991;
+  font-size: 45px;
   text-align: center;
   margin: 60px 0;
 }
@@ -258,7 +262,7 @@ input[id=p3]:checked ~ .items2 .pbtn label[for=p3],
 input[id=p4]:checked ~ .items2 .pbtn label[for=p4]
 input[id=p5]:checked ~ .items3 .pbtn label[for=p5]
 input[id=p6]:checked ~ .items3 .pbtn label[for=p6]{
-  background-color: red;}
+  background-color: #26342c;}
 
 /* viewmore button */
 .pro-btn .p-btn-b{
@@ -291,16 +295,19 @@ input[id=p6]:checked ~ .items3 .pbtn label[for=p6]{
   position: relative;
 }
 #inspiration .ititle{
-  font-size: 25px;
+  color: #C79991;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 #inspiration .ititle span{
-  font-size: 17px;
+  font-size: 20px;
+  margin-left: -5px;
 }
 .insp{
   display: flex;
   position: absolute;
   bottom: 0;
-  height: 700px;
+  height: 90%;
   width: 1200px;
 }
 .insp li{
@@ -368,10 +375,11 @@ input[id=p6]:checked ~ .items3 .pbtn label[for=p6]{
   position: relative;
 }
 .d_inner h2{
+  color: #C79991;
   font-size: 40px;
   text-align: right;
   margin-right: 30px;
-  border-top: 3px solid #000;
+  border-top: 3px solid #C79991;
 }
 
 input[name=slide]{display: none;}
@@ -401,6 +409,7 @@ input[name=slide]{display: none;}
   align-items: center;
 }
 .content .dcap{
+  color: #C79991;
   text-align: right;
   width: 430px;
 }
